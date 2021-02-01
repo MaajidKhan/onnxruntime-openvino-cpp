@@ -1,0 +1,15 @@
+commands to compile the cpp application:
+
+g++ -o run_squeezenet1 squeezenet_cpp_app.cpp -I ../../../include/onnxruntime/core/session/ 
+-I /opt/intel/openvino_2021.2.200/opencv/include/ -I /opt/intel/openvino_2021.2.200/opencv/lib/ 
+-L ./ -lonnxruntime_providers_openvino -lonnxruntime_providers_shared -lonnxruntime 
+-L /opt/intel/openvino_2021.2.200/opencv/lib/ -lopencv_highgui -lopencv_imgcodecs 
+-lopencv_imgproc -lopencv_dnn -lopencv_core
+
+Now to run:
+./run_squeezenet1 --use_openvino    (To run the model using OpenVINO-EP)
+
+./run_squeezenet1 -- use_cpu        (To run the model using default ONNXRuntime CPU EP)
+
+Link to the blog for detailed explanation:
+https://nmaajidkhan.medium.com/onnx-runtime-openvino-c-inference-e682b075fdaf
