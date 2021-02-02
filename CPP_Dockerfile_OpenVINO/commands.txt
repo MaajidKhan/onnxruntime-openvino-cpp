@@ -1,0 +1,10 @@
+Follow the steps from the official documentation page to work with docker containers.
+
+Link:
+https://github.com/microsoft/onnxruntime/blob/master/dockerfiles/README.md#2-building-from-dockerfile
+
+You can also follow this blog, to understand detailed steps, how to work on a docker container and
+start building your applications for sifferent use cases.
+
+Blog Link:
+https://nmaajidkhan.medium.com/building-python-samples-inside-a-docker-container-using-openvino-onnxruntime-execution-provider-9e19fd715e47
